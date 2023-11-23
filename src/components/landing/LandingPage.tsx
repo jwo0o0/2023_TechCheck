@@ -1,12 +1,49 @@
 import styled from "styled-components";
 import Image from "next/image";
 import LandingImg from "@images/landing.webp";
+import { BottomBtn, BtnContainer } from "../common/BottomBtn";
 
 export default function LandingPage() {
   return (
-    <>
-      <div>안녕하세용</div>
-      <Image src={LandingImg} alt="landing" sizes="100%" />
-    </>
+    <LandingPageContainer>
+      <Image src={LandingImg} alt="landing" priority />
+      <BtnContainer>
+        <BottomBtn content="시작하기"></BottomBtn>
+      </BtnContainer>
+      <Information>
+        <div>*이 테스트는 재미를 위해 제작되었습니다.</div>
+        <div>잘못된 정보에 대한 정정 요청은 아래 메일로 부탁드립니다.</div>
+        <div className="email">jwo0o0358@gmail.com</div>
+      </Information>
+    </LandingPageContainer>
   );
 }
+
+const LandingPageContainer = styled.div`
+  padding-top: 10vh;
+  padding-bottom: 200px;
+  position: relative;
+  img {
+    width: 100%;
+    height: 100%;
+    position: relative !important;
+  }
+`;
+
+const Information = styled.div`
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 10px;
+  line-height: 13px;
+  color: #858899;
+  .email {
+    color: #7e68ff;
+  }
+`;
