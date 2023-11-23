@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Image from "next/image";
+import Link from "next/link";
 import LandingImg from "@images/landing.webp";
 import { BottomBtn, BtnContainer } from "../common/BottomBtn";
 
@@ -8,7 +9,9 @@ export default function LandingPage() {
     <LandingPageContainer>
       <Image src={LandingImg} alt="landing" priority />
       <BtnContainer>
-        <BottomBtn content="시작하기"></BottomBtn>
+        <BottomBtn>
+          <Link href="/quiz/1">시작하기</Link>
+        </BottomBtn>
       </BtnContainer>
       <Information>
         <div>*이 테스트는 재미를 위해 제작되었습니다.</div>
@@ -20,7 +23,7 @@ export default function LandingPage() {
 }
 
 const LandingPageContainer = styled.div`
-  padding-top: 10vh;
+  padding-top: 5vh;
   padding-bottom: 200px;
   position: relative;
   img {

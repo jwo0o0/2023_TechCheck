@@ -1,11 +1,17 @@
+import { ReactNode } from "react";
 import styled from "styled-components";
 
 interface BottomBtnProps {
-  content: string;
   handleClick?: () => void;
+  children?: ReactNode;
+  type?: "normal" | "light";
 }
-export const BottomBtn = ({ content, handleClick }: BottomBtnProps) => {
-  return <Button onClick={handleClick}>{content}</Button>;
+export const BottomBtn = ({ children, handleClick, type }: BottomBtnProps) => {
+  return (
+    <Button onClick={handleClick} className={type}>
+      {children}
+    </Button>
+  );
 };
 
 const Button = styled.button`
@@ -13,6 +19,9 @@ const Button = styled.button`
   height: 40px;
   border-radius: 6px;
 
+  a {
+    color: white;
+  }
   color: white;
   background-color: #583dff;
 
@@ -25,6 +34,22 @@ const Button = styled.button`
 
   transition: background-color 0.1s ease;
   z-index: 999;
+
+  &:hover {
+    background-color: #7e68ff;
+    cursor: pointer;
+  }
+
+  &.light {
+    color: #583dff;
+    background-color: #dfdaff;
+    a {
+      color: #583dff;
+    }
+    &:hover {
+      background-color: #c7beff;
+    }
+  }
 `;
 
 //버튼을 화면 하단에 fixed로 고정
