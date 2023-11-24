@@ -9,9 +9,9 @@ export default function LandingPage() {
     <LandingPageContainer>
       <Image src={LandingImg} alt="landing" priority />
       <BtnContainer>
-        <BottomBtn>
-          <Link href="/quiz/1">시작하기</Link>
-        </BottomBtn>
+        <Link href="/quiz/1">
+          <BottomBtn>시작하기</BottomBtn>
+        </Link>
       </BtnContainer>
       <Information>
         <div>*이 테스트는 재미를 위해 제작되었습니다.</div>

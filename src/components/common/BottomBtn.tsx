@@ -5,10 +5,20 @@ interface BottomBtnProps {
   handleClick?: () => void;
   children?: ReactNode;
   type?: "normal" | "light";
+  disabled?: boolean;
 }
-export const BottomBtn = ({ children, handleClick, type }: BottomBtnProps) => {
+export const BottomBtn = ({
+  children,
+  handleClick,
+  type,
+  disabled,
+}: BottomBtnProps) => {
   return (
-    <Button onClick={handleClick} className={type}>
+    <Button
+      onClick={handleClick}
+      className={type}
+      disabled={disabled ? true : false}
+    >
       {children}
     </Button>
   );
@@ -20,12 +30,11 @@ const Button = styled.button`
   padding: 0;
   border-radius: 8px;
 
-  a {
-    color: white;
-  }
   color: white;
   background-color: #583dff;
 
+  font-family: "Pretendard";
+  font-weight: 500;
   font-size: 15px;
   line-height: 40px;
 
@@ -44,20 +53,16 @@ const Button = styled.button`
     cursor: pointer;
   }
 
-  a {
-    width: 320px;
-    height: 40px;
-  }
-
   &.light {
     color: #583dff;
     background-color: #dfdaff;
-    a {
-      color: #583dff;
-    }
     &:hover {
       background-color: #c7beff;
     }
+  }
+  &:disabled {
+    background-color: #e1e1e8;
+    color: #525463;
   }
 `;
 

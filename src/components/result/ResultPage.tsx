@@ -7,9 +7,9 @@ export const ResultPage = () => {
     <ResultPageContainer>
       <div>결과 입니다!</div>
       <BtnContainer>
-        <BottomBtn type="light">
-          <Link href="/">다시 풀기</Link>
-        </BottomBtn>
+        <Link href="/">
+          <BottomBtn type="light">다시 풀기</BottomBtn>
+        </Link>
       </BtnContainer>
     </ResultPageContainer>
   );
