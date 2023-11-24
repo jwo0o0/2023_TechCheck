@@ -34,7 +34,7 @@ const Button = styled.button`
   background-color: #583dff;
 
   font-family: "Pretendard";
-  font-weight: 500;
+  font-weight: 600;
   font-size: 15px;
   line-height: 40px;
 

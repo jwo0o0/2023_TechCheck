@@ -14,7 +14,8 @@ export const Question = ({ question }: QuestionProps) => {
 
 const QuestionContainer = styled.div`
   width: 300px;
-  height: 120px;
+  height: 100px;
+  margin-top: 10px;
 
   display: flex;
   align-items: center;

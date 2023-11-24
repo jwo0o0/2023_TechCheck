@@ -41,7 +41,7 @@ const Answer = styled.button`
   width: 320px;
   height: 45px;
   margin: 6px 0;
-  padding: 0 15px;
+  padding: 0 20px;
   border-radius: 8px;
 
   font-family: "Pretendard";

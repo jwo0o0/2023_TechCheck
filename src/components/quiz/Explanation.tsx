@@ -8,7 +8,7 @@ interface ExplanationProps {
 export const Explanation = ({ explanation }: ExplanationProps) => {
   return (
     <Container>
-      <Image src={starImg} width={24} alt="star" />
+      <Image src={starImg} width={28} alt="star" />
       <Text>{explanation}</Text>
     </Container>
   );
@@ -16,7 +16,7 @@ export const Explanation = ({ explanation }: ExplanationProps) => {
 
 const Container = styled.div`
   width: 280px;
-  height: 140px;
+  height: 120px;
   margin-bottom: 10px;
 
   display: flex;
@@ -26,8 +26,8 @@ const Container = styled.div`
 
   img {
     position: absolute;
-    top: 10px;
-    left: -16px;
+    top: 5px;
+    left: -18px;
   }
 `;
 
