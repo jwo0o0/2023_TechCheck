@@ -39,12 +39,13 @@ const AnswersContainer = styled.div`
 
 const Answer = styled.button`
   width: 320px;
-  height: 40px;
+  height: 45px;
   margin: 6px 0;
   padding: 0 15px;
   border-radius: 8px;
 
   font-family: "Pretendard";
+  font-size: 15px;
   font-weight: 500;
   background-color: transparent;
   color: #525463;

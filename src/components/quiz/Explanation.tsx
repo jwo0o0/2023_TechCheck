@@ -17,7 +17,7 @@ export const Explanation = ({ explanation }: ExplanationProps) => {
 const Container = styled.div`
   width: 280px;
   height: 140px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 
   display: flex;
   align-items: center;
@@ -34,7 +34,7 @@ const Container = styled.div`
 const Text = styled.div`
   font-family: "Pretendard";
   font-weight: 400;
-  font-size: 13px;
-  line-height: 15px;
+  font-size: 14px;
+  line-height: 16px;
   color: #525463;
 `;

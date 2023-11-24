@@ -72,5 +72,5 @@ const ProgressbarContainer = styled.div`
   align-items: center;
   justify-content: center;
 
-  margin-top: 10vh;
+  margin-top: 5vh;
 `;

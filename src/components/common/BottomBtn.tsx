@@ -26,7 +26,7 @@ export const BottomBtn = ({
 
 const Button = styled.button`
   width: 320px;
-  height: 40px;
+  height: 45px;
   padding: 0;
   border-radius: 8px;
 

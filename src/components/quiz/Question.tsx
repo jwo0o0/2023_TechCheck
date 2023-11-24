@@ -23,7 +23,7 @@ const QuestionContainer = styled.div`
 const QText = styled.div`
   color: #583dff;
   height: 40px;
-  font-size: 16px;
+  font-size: 18px;
   margin-right: 4px;
 
   font-family: "Pretendard";
@@ -32,7 +32,7 @@ const QText = styled.div`
 
 const QuestionText = styled.div`
   color: #2b2d36;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 20px;
   font-family: "Pretendard";
   font-weight: 600;
