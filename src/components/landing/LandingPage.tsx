@@ -24,7 +24,7 @@ export default function LandingPage() {
 
 const LandingPageContainer = styled.div`
   padding-top: 5vh;
-  padding-bottom: 200px;
+  //padding-bottom: 200px;
   position: relative;
   img {
     width: 100%;
@@ -35,6 +35,8 @@ const LandingPageContainer = styled.div`
 
 const Information = styled.div`
   width: 100%;
+  height: 120px;
+  padding-bottom: 80px;
   position: absolute;
   bottom: 0;
 
@@ -49,4 +51,6 @@ const Information = styled.div`
   .email {
     color: #7e68ff;
   }
+
+  display: none;
 `;

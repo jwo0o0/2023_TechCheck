@@ -15,15 +15,19 @@ export const BottomBtn = ({ children, handleClick, type }: BottomBtnProps) => {
 };
 
 const Button = styled.button`
-  width: 300px;
+  width: 320px;
   height: 40px;
-  border-radius: 6px;
+  padding: 0;
+  border-radius: 8px;
 
   a {
     color: white;
   }
   color: white;
   background-color: #583dff;
+
+  font-size: 15px;
+  line-height: 40px;
 
   display: inline-flex;
   align-items: center;
@@ -38,6 +42,11 @@ const Button = styled.button`
   &:hover {
     background-color: #7e68ff;
     cursor: pointer;
+  }
+
+  a {
+    width: 320px;
+    height: 40px;
   }
 
   &.light {
@@ -56,7 +65,7 @@ const Button = styled.button`
 export const BtnContainer = styled.div`
   width: 100%;
   max-width: 460px;
-  height: 80px;
+  margin-bottom: 5vh;
 
   position: fixed;
   bottom: 0;
