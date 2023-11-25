@@ -25,6 +25,7 @@ const QText = styled.div`
   color: #583dff;
   height: 40px;
   font-size: 18px;
+  line-height: 20px;
   margin-right: 4px;
 
   font-family: "Pretendard";

@@ -12,7 +12,7 @@ export const Progressbar = ({ step }: ProgressbarProps) => {
 };
 
 const Background = styled.div`
-  width: 280px;
+  width: 288px;
   height: 8px;
   border-radius: 8px;
 
@@ -20,7 +20,7 @@ const Background = styled.div`
 `;
 
 const ProgressLine = styled.div<{ step: number }>`
-  width: ${(props) => props.step * 28}px;
+  width: ${(props) => props.step * 24}px;
   height: 8px;
   border-radius: 8px;
 

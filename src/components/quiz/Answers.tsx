@@ -62,5 +62,5 @@ const Answer = styled.button`
     background-color: #583dff;
     border: none;
   }
-  transition: background-color 0.1s ease;
+  //transition: background-color 0.1s ease;
 `;

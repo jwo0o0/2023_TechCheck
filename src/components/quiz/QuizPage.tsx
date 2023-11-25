@@ -38,7 +38,7 @@ export const QuizPage = () => {
         setSelectedAnswer={setSelectedAnswer}
       />
       <BtnContainer>
-        {currentId === 10 ? (
+        {currentId === 12 ? (
           <Link href="/result">
             <BottomBtn disabled={selectedAnswer === 0 ? true : false}>
               결과 보기
