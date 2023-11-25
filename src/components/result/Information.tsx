@@ -26,7 +26,7 @@ const InformationContainer = styled.div`
 
   font-family: "Pretendard";
   font-size: 11px;
-  line-height: 14px;
+  line-height: 16px;
   color: #858899;
   .email {
     color: #7e68ff;

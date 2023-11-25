@@ -31,7 +31,7 @@ const ToastContainer = styled.div`
   color: white;
 
   position: absolute;
-  left: 25%;
+  left: 0;
   bottom: 110px;
 
   animation: fadeout 2s ease-in-out;

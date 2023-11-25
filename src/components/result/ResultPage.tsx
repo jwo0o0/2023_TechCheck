@@ -46,10 +46,13 @@ export const ResultPage = () => {
 
 const ResultPageContainer = styled.div`
   position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const BtnsContainer = styled.div`
-  width: 100%;
   max-width: 460px;
   height: 110px;
   margin-bottom: 5vh;
