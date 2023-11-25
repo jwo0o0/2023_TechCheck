@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 import linkIcon from "@images/link_icon.svg";
-import { BottomBtn } from "@components/common/BottomBtn";
+import { BottomBtn, Button } from "@components/common/BottomBtn";
 import { Toast } from "../common/Toast";
 import { Information } from "./Information";
 import { Score } from "./Score";
@@ -24,7 +24,7 @@ export const ResultPage = () => {
       <Information />
 
       <BtnsContainer>
-        <BottomBtn handleClick={handleClickCopyBtn}>
+        <Button onClick={handleClickCopyBtn} className="copylink">
           <Image
             src={linkIcon}
             alt="공유하기"
@@ -32,7 +32,7 @@ export const ResultPage = () => {
             style={{ marginRight: "5px" }}
           />
           공유하기
-        </BottomBtn>
+        </Button>
         <Link href="/">
           <BottomBtn type="light">다시 풀기</BottomBtn>
         </Link>

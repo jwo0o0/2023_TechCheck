@@ -24,7 +24,7 @@ export const BottomBtn = ({
   );
 };
 
-const Button = styled.button`
+export const Button = styled.button`
   width: 320px;
   height: 45px;
   padding: 0;
