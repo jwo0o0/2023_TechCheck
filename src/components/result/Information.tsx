@@ -17,7 +17,7 @@ export const Information = () => {
 
 const InformationContainer = styled.div`
   width: 100%;
-  padding-bottom: 180px;
+  padding-bottom: 160px;
 
   display: flex;
   flex-direction: column;
@@ -36,4 +36,7 @@ const InformationContainer = styled.div`
       margin-right: 4px;
     }
   }
+
+  position: absolute;
+  bottom: 0;
 `;

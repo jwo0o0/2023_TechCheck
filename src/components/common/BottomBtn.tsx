@@ -48,16 +48,21 @@ export const Button = styled.button`
   transition: background-color 0.1s ease;
   z-index: 999;
 
-  &:hover {
+  &:active {
     background-color: #7e68ff;
+  }
+  &:hover {
     cursor: pointer;
   }
 
   &.light {
     color: #583dff;
     background-color: #dfdaff;
-    &:hover {
+    &:active {
       background-color: #c7beff;
+    }
+    &:hover {
+      cursor: pointer;
     }
   }
   &:disabled {

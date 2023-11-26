@@ -8,6 +8,8 @@ import { BottomBtn, Button } from "@components/common/BottomBtn";
 import { Toast } from "../common/Toast";
 import { Information } from "./Information";
 import { Score } from "./Score";
+import { CheckAnswer } from "./CheckAnswer";
+import { AnswerList } from "./AnswerList";
 
 export const ResultPage = () => {
   const [toast, setToast] = useState<boolean>(false);
@@ -19,9 +21,12 @@ export const ResultPage = () => {
 
   return (
     <ResultPageContainer>
-      <Score score={8} />
-      <Content />
+      <Content>
+        <Score score={8} />
+        <CheckAnswer />
+      </Content>
       <Information />
+      <AnswerList />
 
       <BtnsContainer>
         <Button onClick={handleClickCopyBtn} className="copylink">
@@ -68,5 +73,6 @@ const BtnsContainer = styled.div`
 const Content = styled.div`
   border: 1px solid green;
   width: 100%;
-  height: 1000px;
+  height: 100vh;
+  position: relative;
 `;
