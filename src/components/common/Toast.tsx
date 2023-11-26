@@ -18,20 +18,21 @@ export const Toast = ({ message, setToast }: ToastProps) => {
 };
 
 const ToastContainer = styled.div`
-  width: 240px;
+  width: 150px;
   height: 36px;
   background-color: #3e404c;
   border-radius: 4px;
-  padding-left: 12px;
 
   font-family: "Pretendard";
   font-weight: 600;
   font-size: 12px;
   line-height: 36px;
   color: white;
+  text-align: center;
 
   position: absolute;
-  left: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
   bottom: 110px;
 
   animation: fadeout 2s ease-in-out;
