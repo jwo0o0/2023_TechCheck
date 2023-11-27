@@ -46,6 +46,9 @@ export const AnswerList = () => {
                 className={
                   "answer " + `${selected === idx + 1 ? "selected" : ""}`
                 }
+                onClick={() => {
+                  handleDetailBtn(idx + 1);
+                }}
               >
                 {el}
               </button>
@@ -138,6 +141,11 @@ const Answer = styled.div`
     width: 26px;
     margin-right: 4px;
     text-align: center;
+
+    font-family: "Pretendard";
+    font-size: 18px;
+    font-weight: 600;
+    color: #3e404c;
   }
 
   img {
