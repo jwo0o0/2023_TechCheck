@@ -74,7 +74,6 @@ const BtnsContainer = styled.div`
 `;
 
 const Content = styled.div`
-  border: 1px solid green;
   width: 100%;
   min-height: 100vh;
   position: relative;
