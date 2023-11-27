@@ -25,8 +25,11 @@ export const ResultPage = () => {
         <Score score={8} />
         <CheckAnswer />
       </Content>
-      <Information />
-      <AnswerList />
+
+      <AnswerContent>
+        <AnswerList />
+        <Information />
+      </AnswerContent>
 
       <BtnsContainer>
         <Button onClick={handleClickCopyBtn} className="copylink">
@@ -73,6 +76,11 @@ const BtnsContainer = styled.div`
 const Content = styled.div`
   border: 1px solid green;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
+`;
+
+const AnswerContent = styled.div`
+  width: 100%;
+  height: 100vh;
 `;

@@ -32,7 +32,7 @@ export const CheckAnswer = () => {
 };
 
 const CheckAnswerContainer = styled.button`
-  margin-bottom: 180px;
+  padding-bottom: 180px;
   position: absolute;
   bottom: 0;
   left: 50%;
