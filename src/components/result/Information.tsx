@@ -17,7 +17,8 @@ export const Information = () => {
 
 const InformationContainer = styled.div`
   width: 100%;
-  padding-bottom: 160px;
+  margin-top: 60px;
+  padding-bottom: 120px;
 
   display: flex;
   flex-direction: column;

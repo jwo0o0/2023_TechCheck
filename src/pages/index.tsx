@@ -18,7 +18,12 @@ export default function Home() {
     <>
       <Head>
         <title>2023 Tech Check</title>
-        <meta name="description" content="2023 테크 이슈를 정리하세요." />
+        <meta property="og:titme" content="2023 Tech Check" />
+        <meta
+          property="og:description"
+          content="2023 테크 이슈를 정리하세요."
+        />
+        <meta property="og:image" content="/images/" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

@@ -63,7 +63,7 @@ const ResultPageContainer = styled.div`
 const BtnsContainer = styled.div`
   max-width: 460px;
   height: 110px;
-  margin-bottom: 5vh;
+  margin-bottom: 24px;
 
   position: fixed;
   bottom: 0;
